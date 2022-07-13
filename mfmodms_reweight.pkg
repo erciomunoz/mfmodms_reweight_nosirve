@@ -1,0 +1,13 @@
+v 1.0
+d 'MFMODMS_REWEIGHT': mfmodms_reweight
+d 
+d Reweighting-based microsim with MFMod
+d 
+d Distribution-Date:   20220713
+d License: Academic Free License v3.0
+d 
+F mfmodms_reweight.ado
+f Example2.do
+f Example2.dta
+f MFMod.xlsx
+f MFMOD_inputs.do

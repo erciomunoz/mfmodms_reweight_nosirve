@@ -1,0 +1,8 @@
+v 1.0
+d Materials by Ercio Munoz
+d The World Bank
+d emunozsaavedra@worldbank.org
+
+d 'mfmodms_reweight': Reweighting-based microsim with MFMod
+
+p mfmodms_reweight
