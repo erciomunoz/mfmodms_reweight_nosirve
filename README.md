@@ -1,1 +1,1 @@
-# mfmodms_reweight
+# Reweighting-based MFMod-MS
