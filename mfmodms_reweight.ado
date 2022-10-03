@@ -1,4 +1,4 @@
-*! version 1.0   Ercio Munoz 10/3/2022 
+*! version 1.1   Ercio Munoz 10/3/2022 
 	
 /* 
 - Program to reweight the population given demographic projections (age & education) and sector shares using wentropy. 
@@ -16,10 +16,6 @@ syntax [anything], AGE(string) EDUcation(string) GENDER(string) HHSize(string) /
  ID(string) IWeights(string) COUNTRY(string) IYear(string) TYear(string) ///
  Generate(string) MATCH(string) POPDATA(string) INDUSTRY(string) GROWTH(string) ///
  EMPLOYMENT(string) VARIANT(string) [ OMIT ] 
-
-	** Installing needed software **
-*	cap ssc install csipolate
-*	cap ssc install gtools
 	
 ********************************************************************************
 	** Bringing UN population projections and aggregating cohorts ** 
