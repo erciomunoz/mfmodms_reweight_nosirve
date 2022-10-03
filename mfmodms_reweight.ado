@@ -1,4 +1,4 @@
-*! version 1.1   Ercio Munoz 10/3/2022 
+*! version 1.0.0   Ercio Munoz 10/3/2022 
 	
 /* 
 - Program to reweight the population given demographic projections (age & education) and sector shares using wentropy. 
