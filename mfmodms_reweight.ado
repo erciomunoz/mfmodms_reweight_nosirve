@@ -1,4 +1,4 @@
-*! version 1.0   Ercio Munoz 4/14/2022 
+*! version 1.0   Ercio Munoz 10/3/2022 
 	
 /* 
 - Program to reweight the population given demographic projections (age & education) and sector shares using wentropy. 
@@ -10,7 +10,7 @@ of education as the current young individuals.
 
 cap program drop mfmodms_reweight
 program define mfmodms_reweight
-version 12.0
+version 16.0
 
 syntax [anything], AGE(string) EDUcation(string) GENDER(string) HHSize(string) /// 
  ID(string) IWeights(string) COUNTRY(string) IYear(string) TYear(string) ///
@@ -50,7 +50,7 @@ preserve
 	gen country_merge = "`country'"
 	collapse (sum) y*, by(country_merge)
 					
-	forval p = 1950/2100 {
+	forval p = 1991/2100 {
 		gen double y`p'1 = yf`p' + ym`p'
 	}
 				
@@ -77,7 +77,7 @@ quietly	{
 	levelsof `education', local(alledus)
 	
 	* Verifying that the target year selected is within range
-	if `tyear' < 1950 | `tyear' > 2100 {
+	if `tyear' < 1991 | `tyear' > 2100 {
 		noi di " "
 		noi di in red "Target year is out of range"
 		exit
